@@ -154,7 +154,7 @@ footer{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: darkgray;
+  background-color: ;
   font-size: 15px;
 }
 .f{
@@ -165,13 +165,20 @@ footer{
   color: lightseagreen;
   font-size: larger;
   font-weight: bold;
+
 }
 .ff{
   display: flex;
   justify-content: space-between;
   width: 20%;
+  margin-left: 380px;
+
 }
 .ff img{
   width: 32px;
   height: 32px;
+}
+
+.categories{
+  background-color: ;
 }
