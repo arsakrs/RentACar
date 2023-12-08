@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="main.js"></script>
-	<title>Rent A Car</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>Rent A Car</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-	<div class="nav">
-		<div>
-				<a href="Categories.html">Categories</a>
-				<a href="file:///C:/Users/Admin/OneDrive/Desktop/Rent%20A%20Car.webfaqja_files/About.html">About Us</a>
-				<a href="file:///C:/Users/Admin/OneDrive/Desktop/Rent%20A%20Car.webfaqja_files/contactus.html">Contact Us</a>
-		</div>
-	</div>
-	
-	<div class="bg-img">
-		<form action="/action_page.php" class="container">
-			<h1>Login</h1>
+    <header>
+        <a href="#" class="logo"><img src="jeep.png"></a>
 
-			<label for="name"><b>Name</b></label>
-			<input type="text" placeholder="Enter Name" name="name" required>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-			<label for="email"><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus">Contact Us</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="#" class="sign-up">Sign Up</a>
+            <a href="#" class="sign-in">Sign In</a>
+        </div>
+    </header>
 
-		 	<label for="psw"><b>Password</b></label>
-		 	<input type="password" placeholder="Enter Password" name="psw" required>
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>Looking</span> to <br>rent a car</h1>
+            <p style="color: cyan;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="app-stores">
+                <img src="ios.png">
+                <img src="512x512.png">
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <div class="input-box">
+                        <span>Location</span>
+                        <input type="search" name="" id="" placeholder="Search Places">
+                    </div>
+                    <div class="input-box">
+                        <span>Pick-Up Date</span>
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="input-box">
+                        <span>Return Date</span>
+                        <input type="date" name="" id="">
+                    </div>
+                    <input type="submit" name="" id="" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
 
-			
-		 	<label for="psw"><b>confirmPassword</b></label>
-		 	<input type="confirmPassword" placeholder="confirmPassword" name="psw" required>
-
-			<button type="submit" class="btn">Login</button>
-			
-		</form>
-		<script>
-			function validate(){
-				var name= document.getElementById('name').value;
-				var email=document.getElementById('email').value;
-				var password=document.getElementById('password').value;
-				var confirmPassword = document.getElementById('confirmPassword').value;
-			}
-
-			var nameRegex = /^[a-zA-Z\s]+$/;
-			if(!nameRegex.test(name)){
-				alert('Please enter a valid name.');
-				return false;
-			}
-
-			var emailRegex = /^[^s@]+@[^\s@]+\.[^\s@]+$/;
-			if(!emailRegex.test(email)){
-				alert('Please enter a valid email address.');
-				return false;
-			}
-		</script> 
-
-	</div>
 </body>
 </html>
