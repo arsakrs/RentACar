@@ -19,7 +19,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="Categories.html">Categories</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="contactus">Contact Us</a></li>
         </ul>
         <div class="header-btn">
             <a href="#" class="sign-up">Sign Up</a>
@@ -55,6 +55,31 @@
             </div>
         </div>
     </section>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            file:///C:/Users/Admin/OneDrive/Documents/GitHub/RentACar/Rent%20a%20car/singin.html#
+            const signUpLink = document.querySelector('.sign-up');
+            const signInLink = document.querySelector('.sign-in');
+            
+            // Vendos veprimet kur klikohen lidhjet
+            signUpLink.addEventListener('click', function(e) {
+                // Parandalon ndalimin e sjelljes normale të lidhjes (nuk do të kalojë në një faqe të re)
+                e.preventDefault();
+                
+                // Vendos kodin për 'Sign Up' këtu
+                console.log('Sign Up link clicked!');
+                // Shto kodin për hapjen e formës së regjistrimit, dritare modale, ose ndonjë veprim tjetër
+            });
+            
+            signInLink.addEventListener('click', function(e) {
+                // Parandalon ndalimin e sjelljes normale të lidhjes (nuk do të kalojë në një faqe të re)
+                e.preventDefault();
+                
+                // Vendos kodin për 'Sign In' këtu
+                console.log('Sign In link clicked!');
+                // Shto kodin për hapjen e formës së identifikimit, dritare modale, ose ndonjë veprim tjetër
+            });
+        });
+    </script>
 </body>
 </html>
