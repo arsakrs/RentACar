@@ -9,10 +9,12 @@
      <script src="https://kit.fontawesome.com/9b33809489.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+
 <div class="container">
 <div class="form-box">
 <h1 id="title">Sign Up</h1>
-
+<a href="index.html" class="logo"><img src="jeep.png"></a>
 <form>
     <div class="input-group">
         <div class="input-field"id = "nameField">
@@ -32,18 +34,17 @@
             <input id="password" type="password" placeholder="password">
             <div class="error"></div>
         </div>
-        <p>Lost password <a href="#">Click Here!</a></p>
     </div>
     <div class="btn-field">
         <button type="button"id ="signupBtn">Sing up</button>
-        <button type="button"id="singinBtn" class="disable">Sing in</button>
+        <button type="button"id="signinBtn" class="disable">Sing in</button>
     </div>
 </form>
 </div>
 </div>
 <script>
 let signupBtn = document.getElementById("signupBtn");
-let signinBtn = document.getElementById("singinBtn"); // Rregullimi i identifikimit të butonit "Sign In"
+let signinBtn = document.getElementById("signinBtn"); // Rregullimi i identifikimit të butonit "Sign In"
 let nameField = document.getElementById("nameField");
 let title = document.getElementById("title");
 
@@ -221,6 +222,64 @@ form p a{
     background: #aeaeae;
     color: #555;
 }
+
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
 
 </style>
 
