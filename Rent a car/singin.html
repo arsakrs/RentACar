@@ -12,21 +12,25 @@
 <div class="container">
 <div class="form-box">
 <h1 id="title">Sign Up</h1>
+
 <form>
     <div class="input-group">
         <div class="input-field"id = "nameField">
             <i class="fa-solid fa-user"></i>
-            <input type="text"placeholder="Name">
+            <input id="username" type="text"placeholder="username">
+            <div class="error"></div>
         </div>
 
         <div class="input-field">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email"placeholder="Email">
+            <input id="email" type="text" placeholder="email">
+            <div class="error"></div>
         </div>
 
         <div class="input-field">
             <i class="fa-solid fa-lock"></i>
-            <input type="password"placeholder="Password">
+            <input id="password" type="password" placeholder="password">
+            <div class="error"></div>
         </div>
         <p>Lost password <a href="#">Click Here!</a></p>
     </div>
@@ -38,7 +42,7 @@
 </div>
 </div>
 <script>
-    let signupBtn = document.getElementById("signupBtn");
+let signupBtn = document.getElementById("signupBtn");
 let signinBtn = document.getElementById("singinBtn"); // Rregullimi i identifikimit të butonit "Sign In"
 let nameField = document.getElementById("nameField");
 let title = document.getElementById("title");
@@ -56,7 +60,73 @@ signupBtn.onclick = function(){
     signupBtn.classList.remove("disable");
     signinBtn.classList.add("disable");
 }
-   
+
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Username is required');
+    } else {
+        setSuccess(username);
+    }
+
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
+    } else {
+        setSuccess(password);
+    }
+
+};
+
+
+
+
 
 </script>
 
