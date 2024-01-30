@@ -35,8 +35,8 @@
             </form>
         </div>
         <div class="contact-info">
-            <div><i class="fa-solid fa-location-dot"></i>Magjistralja Prishtine-ferizaj,Kosove </div>
-            <div><i class="fa-solid fa-envelope"></i>RentACarExpress@email.com</div>
+            <div><i class="fa-solid fa-location-dot"></i>Magjistralja Prishtine-Ferizaj,Kosove </div>
+            <div><i class="fa-solid fa-envelope"></i>RentACarExpress@gmail.com</div>
             <div><i class="fa-solid fa-phone"></i>+383 (0)38 500 500</div>
             <div><i class="fa-solid fa-clock"></i>Mon-Sun 08:00 AM to 18:00 PM</div>
         </div>
@@ -45,8 +45,8 @@
     <style>
         /* Your existing styles */
         .contact-form .text-box{
-        background: #111010;
-        color: #c8bfbf;
+        background: #090909;
+        color: #f2eaea;
         border: none;
         width: calc(50% - 10px);
         height: 50px;
@@ -58,7 +58,7 @@
         opacity: 0.9;
     }
     .contact-form .text-box:focus {
-    color: #c8bfbf; /* Ngjyra e tekstit kur fusha është në fokus */
+    color: #e7dfdf; /* Ngjyra e tekstit kur fusha është në fokus */
 }
     body{
     min-height: 100vh;
@@ -92,7 +92,7 @@
             border-left: 1px solid #0b0a0a;
         }
         .contact-info{
-    color:#c4b6b6;
+    color:#e2dada;
     max-width: 500px;
     line-height: 65px;
     padding-left: 50px;
@@ -110,7 +110,7 @@
         flex:1;
     }
     .contact-form h2{
-        color:#d3cdcd;
+        color:#efdfdf;
         text-align: center;
         font-size: 35px;
         text-transform: uppercase;
@@ -118,7 +118,7 @@
     }
         .contact-form .send-btn{
         float:right;
-        background:#a7a6a6 ;
+        background:#e4dbdb ;
         color: #3b3838;
         border: none;
         width: 120px;
@@ -132,7 +132,24 @@
     .contact-form .send-btn:hover{
         background: #0582E3;
     }
+    .contact-form textarea {
+    background: #111010; /* Black background */
+    color: #c8bfbf; /* Light text color */
+    border: none;
+    width: calc(100% - 24px); /* Adjust width for padding */
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    resize: vertical; /* Allowing vertical resizing */
+    height: 150px; /* Setting a fixed initial height */
+}
 
+.contact-form textarea:focus {
+    color: #c8bfbf; /* Text color when in focus */
+}
     </style>
 
 </body>
