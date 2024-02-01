@@ -58,7 +58,7 @@
     margin-right: 20%;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    color: white !important;
+    color: lightgrey;
     font-size: 24px;
 }
 
@@ -117,7 +117,7 @@
 <body>
 
 <header>
-    <a href="#" class="logo"><img src="jeep.png?v=<?php echo time(); ?>"></a>
+    <a href="index.php" class="logo"><img src="jeep.png?v=<?php echo time(); ?>"></a>
     <div class="bx-menu" id="menu-icon"></div>
     <ul class="navbar">
         <li><a href="index.php">Home</a></li>
@@ -130,10 +130,21 @@
 <div class="slideshow-container">
     <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="test.png" style="width: 100%; height:auto;">
+        <img src="kerri.png" style="width: 100%; height:auto;">
         <div class="texti"><h1><strong>Drive your Dreams</strong></h1>  <a href="contactus.php" class="butoni">Read More</a></div>
     </div>
-    <!-- Add other slides as needed... -->
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="car2.png" style="width: 100%; height: auto;"><!--qur e qet ni foto tanen te img -->
+  <div class="texti"><h1><strong>Don’t count the miles, only the memories.</strong></h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="car1.png" style="width: 100%; height: auto;"><!--qur e qet ni foto tanen te img -->
+  <div class="texti" ><h1><strong>Driving a luxury car that is the pinnacle of a successful lifestyle</strong></h1></div>
+</div>
 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
     <a class="next" onclick="plusSlides(1)">❯</a>

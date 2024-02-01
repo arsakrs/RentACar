@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Categories</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="jeep.png"></a>
+        <a href="index.php" class="logo"><img src="jeep.png"></a>
 
         <div class="bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Categories.html">Categories</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="Categories.php">Categories</a></li>
+            <li><a href="About.php">About</a></li>
+            <li><a href="contactus.php">Contact Us</a></li>
         </ul>
     </header>
 
     <section class="services" id="services">
          <div class="heading">
-            <h1>Expolre Out Deals <br> From Top Rated Dealers</h1>
+            <h1>Explore Our Deals <br> From Top Rated Dealers</h1>
          </div>
          
     </section>
    <div class="services-container">
                 <div class="box">
                 <div class="box-img">
-                    <img src="bmw1.jpg" alt="">
+                    <img src="bmw1.jpg?v=<?php echo time(); ?>" alt="">
                 </div>
                 <h3>2014 Bmw 120d</h3>
                 <h2>$25 <span>/day</span></h2>
